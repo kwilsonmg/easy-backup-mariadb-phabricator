@@ -5,7 +5,7 @@ This custom Docker image, `easy-backup-mariadb-phabricator`, is hosted on [Docke
 ### Features
 
 - Built on top of the base image from [phabricator/phabricator](https://hub.docker.com/r/phabricator/phabricator), ensuring compatibility with the Phabricator software stack.
-- Includes additional components and configurations to simplify the backup of MariaDB databases within a Phabricator environment.
+- Includes additional components and configurations to simplify the backup of MariaDB databases within a Phabricator environment. This is needed because Phabricator does not, as an image on its own, ship with the mysql commands necessary to actually make use of ```./bin/storage dump --compress --output backup.sql.gz```
 
 ### How to Use
 
